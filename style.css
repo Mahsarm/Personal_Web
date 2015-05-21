@@ -202,18 +202,17 @@ nav a:hover{
 
 .section{
     position: relative;
-    max-width: 100%;
+    width: 100%;
 	margin: 0 auto;
     display:block;
-    background-color:white;   
+    background-color:white;  
 }
 
 
 
 
 .section h3 {
-    padding-top: 20px;
-    padding-left: 30px;
+    padding-top: 10px;
     color: black;
     
 }
@@ -301,11 +300,9 @@ div.block-pics img:hover{
 .projects .note{
     padding: 0px 40px 20px 40px;
     margin: 5px auto;
-    max-width: 70%;
+    width: 70%;
     border: 3px solid #4682b4;
-    border-radius: 4px;
-   
-    
+    border-radius: 4px;    
 }
 
 .projects h3 {
@@ -327,12 +324,12 @@ div.block-pics img:hover{
 
 .contacts-wrapper{
    
-    background-image: url("images/boat.png");
+    background-image: url("images/burlington-bay.jpg");
     background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-    background-position: cover;
+    background-size: cover;
     background-position: center;
     display: block;
     text-align: center;
@@ -463,7 +460,8 @@ box-shadow: 0 0 10px #8e8e8e;
     .bio .message {
         width: 50%;
         margin-left: 8%;
-        padding: 2% 10%;
+        padding: 2% 2%;
+        text-align: left;
     }
 
     nav a {
@@ -476,11 +474,16 @@ box-shadow: 0 0 10px #8e8e8e;
     
     }
     
+    input[name="name"], input[name="email"], input[name="subject"], textarea {
+        width: 60%;
+    
+    }
+    
     
 }
 
 
-@media (max-width: 481px) {
+@media (max-width: 481px)  {
     
     h1 {
         color:red;
@@ -540,17 +543,29 @@ box-shadow: 0 0 10px #8e8e8e;
         float:none;
         margin: 5% auto;
         width: 80%;
-        padding: 2% 10%;
+        padding: 2% 5%;
+        text-align: left;
     }
     
     .section .note{
-        max-width: 90%;
+        padding: 0px 10px 10px 10px;
+        margin: 5px auto;
+        width: 95%;
         margin: 2% auto;
+    }
+    
+    .projects h3 {
+        font-size: 2em
+    }
+    
+    .projects {
+        text-align: left;
     }
     
     .contacts-wrapper{
         background-image: none;
         background-color: #b0c4de;
+        padding-top: 10%;
     }
     
     svg {
@@ -563,17 +578,26 @@ box-shadow: 0 0 10px #8e8e8e;
     
     }
 
-    .projects h3 {
-        font-size: 2em
-    }
-    
-    .projects {
-        text-align: center;
-    }
 }
 
 
+@media (max-width: 320px) {
 
+    .section .note{
+        padding: 5px;
+        margin: 5px auto;
+        width: 98%;    
+    }
+    
+    .section h3 {
+    padding-top: 2px;
+    padding-left: 0px;
+    color: black; 
+    }
+    
+    
+    
+}
 
 
 
